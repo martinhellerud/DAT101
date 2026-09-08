@@ -12,31 +12,31 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				Replace this with you answer
+				Konstanter (const) bør brukes når verdien ikke skal endres etter at den er satt, for eksempel faste tall som antall centimeter i en meter, eller tekster som ikke skal overskrives. Variabler (let) brukes når verdien skal kunne endre seg underveis i programmet, for eksempel en teller eller et mellomresultat som oppdateres flere ganger. Ikke alt kan være konstanter - hvis en verdi må endres etter at den er deklarert (som "remainder" i Part 4, der vi trekker fra og ganger opp flere ganger), må den være en variabel med let.
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				Replace this with you answer
+				Parenteser bestemmer regnerekkefølgen og overstyrer den vanlige matematiske rekkefølgen (multiplikasjon og divisjon før addisjon og subtraksjon). Det vi setter inni parenteser blir regnet ut først. I Part 1 så vi dette tydelig: uten parenteser ga 2 + 3 * 2 - 4 * 6 svaret -16, men ved å legge til parenteser rundt (2 - 4) og gruppere om uttrykket, fikk vi -34 i stedet.
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				Replace this with you answer
+				Vi kan bruke metoden .toFixed(antall desimaler), som runder av tallet og returnerer det som en tekststreng med det angitte antallet desimaler. For eksempel gir (997.6377).toFixed(2) resultatet "997.64". Dette brukte vi i Part 2 for å begrense svaret til maks 2 desimaler.
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				Replace this with you answer
+				På grunn av hvordan flyttall lagres i minnet, kan små avrundingsfeil oppstå, så 12.199999 er strengt tatt ikke helt likt 12.2 hvis man sammenligner dem direkte med ===. En vanlig løsning er å runde av begge tallene til et fornuftig antall desimaler (f.eks. med .toFixed()) før man sammenligner dem, eller å sjekke at differansen mellom dem er mindre enn en veldig liten toleranseverdi (f.eks. 0.0001).
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				Replace this with you answer
+				Sammenligningsoperatorer (som >, <, >=, <=, === og !==) returnerer alltid en boolsk verdi: enten true eller false. Vi kan sjekke resultatet ved å skrive det ut direkte, som vi gjorde i Part 7, eller lagre det i en variabel og bruke variabelen i en if-setning senere for å styre programflyten.
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				Replace this with you answer
+				Math.random() returnerer et tilfeldig desimaltall mellom 0 (inkludert) og 1 (ikke inkludert). For å få tilfeldige tall i et annet område, ganger vi resultatet med ønsket maks-verdi og bruker Math.floor() eller Math.ceil() for å gjøre det om til et helt tall, slik vi gjorde i Part 9 for å generere et tall mellom 1 og 360. Dette brukes ofte til terningkast, tilfeldige spillelementer, eller trekninger.
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				Replace this with you answer
+				Modulus (%) gir resten etter en heltallsdivisjon. Vi trenger den når vi vil vite hva som "blir til overs" etter at vi har delt et tall så mange ganger som mulig, for eksempel når vi regner om dager til uker og dager slik vi gjorde i Part 10: 131 % 7 ga oss antallet dager som var igjen etter at alle hele ukene var trukket fra.
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>
