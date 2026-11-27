@@ -10,8 +10,22 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>Why is object-oriented development so important in programming?</li>
+      <p>
+        Det gjør det lettere å holde orden på koden. Man samler ting som hører sammen i en klasse, som kontoen vår, og kan bruke den om igjen i stedet for å skrive alt flere ganger.
+      </p>
+      <li>In Task 1, we create a static object called "AccountType." Explain what this object is used for and how this type of object can help us in software development.</li>
+      <p>
+        AccountType holder de faste navnene på kontotypene. Da kan vi skrive AccountType.Saving i stedet for å skrive "Sparekonto" for hånd hver gang, så det blir færre skrivefeil og man trenger bare endre navnet ett sted.
+      </p>
+      <li>Discuss why we use encapsulation in classes. Why do we want to "hide" code within our class? Explain how we can create "private" and "public" members in a constructor function.</li>
+      <p>
+        Vi skjuler ting så de ikke kan endres utenfra ved et uhell, f.eks. at noen endrer balance direkte uten å gå gjennom deposit eller withdraw. Private får # foran navnet, som #balance, og kan bare brukes inni klassen. Public er metodene uten #, som deposit(), og de kan brukes utenfra.
+      </p>
+      <li>Explain what happens when we use the "new" command in JavaScript.</li>
+      <p>
+        new lager et nytt objekt fra klassen og kjører constructor. Så myAccount blir en egen konto med sine egne verdier.
+      </p>
     </ol>
     <script type="module" src="./task_4-1.mjs" defer></script>
   </body>
