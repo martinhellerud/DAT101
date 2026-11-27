@@ -7,11 +7,37 @@
   <body style="display: table-cell; vertical-align: middle">
     <h2><label for="txtOut">Output from Task 3.3:</label></h2>
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
-      <span id="txtOut" style="white-space: nowrap"></span>
+      <span id="txtOut"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>What is the difference between invoking and creating a function?</li>
+      <p>
+        Å lage en funksjon er når man skriver function og bestemmer hva den skal gjøre. Å kalle den er når man faktisk bruker den, f.eks. printTodaysDate(). Den gjør ingenting før man kaller den.
+      </p>
+      <li>Explain the syntax regarding semicolons and code blocks.</li>
+      <p>
+        Kodeblokken er alt som står mellom { og }. Man setter semikolon etter vanlige linjer med kode, men ikke etter } når man lager en funksjon.
+      </p>
+      <li>What happens when we try to store values from a function when it doesn't return any?</li>
+      <p>
+        Da blir verdien undefined, siden funksjonen ikke gir noe tilbake.
+      </p>
+      <li>How do we separate parameters from each other when creating a function?</li>
+      <p>
+        Med komma, f.eks. function convertTemperature(temperature, temperatureType).
+      </p>
+      <li>Explain how parameter names are related during the invocation and creation of a function.</li>
+      <p>
+        Det er rekkefølgen som bestemmer. Den første verdien man sender inn havner i den første parameteren osv. Navnene trenger ikke være de samme som variablene man sender inn.
+      </p>
+      <li>Explain why a parameter is undefined when a function call is missing a parameter.</li>
+      <p>
+        Hvis man ikke sender inn noe for en parameter, har den ikke fått noen verdi, så den blir undefined. Brukte det i Part 7 for å finne ut hva som manglet.
+      </p>
+      <li>Explain what happens when we use recursive functions.</li>
+      <p>
+        Funksjonen kaller seg selv igjen og igjen til den kommer til et punkt der den stopper, som i Part 10 når tallet blir 1. Uten et sånt stoppunkt ville den aldri stoppet.
+      </p>
     </ol>
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
