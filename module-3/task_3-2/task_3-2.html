@@ -7,11 +7,25 @@
   <body style="display: table-cell; vertical-align: middle">
     <h2><label for="txtOut">Output from Task 3.2:</label></h2>
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
-      <span id="txtOut" style="white-space: nowrap"></span>
+      <span id="txtOut"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>In part 1, is it possible to solve the problem using a single "for" loop?</li>
+      <p>
+        Ja. Man kan ha to variabler i samme for loop, en som teller opp og en som teller ned.
+      </p>
+      <li>In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop? Describe what would or would not be necessary to achieve this. Provide a thorough explanation of your answer.</li>
+      <p>
+        Ja. Hvis tallet vi leter etter aldri kan bli gjettet, f.eks. hvis det hemmelige tallet er 70 men den bare gjetter mellom 1 og 60, så blir betingelsen alltid true og loopen stopper aldri. Det samme skjer hvis man glemmer å lage en ny gjetning inni loopen.
+      </p>
+      <li>Discuss briefly how quickly or slowly a computer might be able to compute this, considering the number of guesses and the time it takes. How does the program behave while it is guessing? Can the program perform other tasks concurrently?</li>
+      <p>
+        Den er veldig rask, selv med over en million gjetninger tok det bare noen millisekunder. Mens den gjetter står resten av siden bare og venter, så den kan ikke gjøre noe annet samtidig.
+      </p>
+      <li>Explain the relationship between rows and columns in nested "for" loops. Can we, for instance, change the order, considering rows to be innermost or columns to be innermost, or does this not matter?</li>
+      <p>
+        Den ytre loopen lager radene og den indre lager kolonnene i hver rad. Man kan bytte om, men da blir det snudd, så hver linje blir en kolonne i stedet. Så det spiller en rolle for hvordan det ser ut.
+      </p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
